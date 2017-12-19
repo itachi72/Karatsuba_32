@@ -1,0 +1,16 @@
+ISim log file
+Running: D:\work\fpga\karatsuba_new\karat_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/work/fpga/karatsuba_new/karat_isim_beh.wdb 
+ISim P.40xd (signature 0x8ef4fb42)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /karat/A 1101011001010101 -radix bin
+# isim force add /karat/A 1101011001010101 -radix bin
+# isim force add /karat/B 1101100100101000 -radix bin
+# isim force add /karat/B 1101100100101000 -radix bin
+# run all
+# run 1.00us
