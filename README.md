@@ -1,9 +1,9 @@
 # Karatsuba_32
 <h1><B>A 32 bit karatsuba multiplier.</B></h2>
-The Karatsuba algorithm is a fast multiplication algorithm. It was discovered by Anatoly Karatsuba in 1960 and published in 1962. It reduces the multiplication of two n-digit numbers to at most {\displaystyle n^{\log _{2}3}\approx n^{1.585}} n^{\log _{2}3}\approx n^{1.585} 
-single-digit multiplications in general (and exactly {\displaystyle n^{\log _{2}3}} n^{\log _{2}3} when n is a power of 2). 
-It is therefore faster than the classical algorithm, which requires n2 single-digit products. 
-For example, the Karatsuba algorithm requires 310 = 59,049 single-digit multiplications to multiply two 1024-digit numbers (n = 1024 = 210), whereas the classical algorithm requires (210)2 = 1,048,576.
+The Karatsuba algorithm is a fast multiplication algorithm. It was discovered by Anatoly Karatsuba in 1960 and published in 1962. It reduces the multiplication of two n-digit numbers to at most <b> n^{1.585} </b>.
+ 
+It is therefore faster than the classical algorithm, which requires n^2 single-digit products. 
+For example, the Karatsuba algorithm requires 310 = 59,049 single-digit multiplications to multiply two 1024-digit numbers (n = 1024 = 210), whereas the classical algorithm requires 2^210 = 1,048,576.
 
 The Karatsuba algorithm was the first multiplication algorithm asymptotically faster than the quadratic "grade school" algorithm.
 Karatsuba algorithm is a recursive algorithm which fastens the multiplication process by taking less resources and breaking the 
