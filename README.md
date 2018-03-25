@@ -9,7 +9,7 @@ The Karatsuba algorithm was the first multiplication algorithm asymptotically fa
 Karatsuba algorithm is a recursive algorithm which fastens the multiplication process by taking less resources and breaking the 
 process into smaller parts. The algo works like this:
 
-<h2><b>Basic step</b></h2>
+<h2><b>Steps</b></h2>
 X =  Xl*2n/2 + Xr    [Xl and Xr contain leftmost and rightmost n/2 bits of X]
 Y =  Yl*2n/2 + Yr    [Yl and Yr contain leftmost and rightmost n/2 bits of Y]
 The product XY can be written as following.
@@ -28,3 +28,5 @@ What if the lengths of input strings are different and are not even? To handle t
 
 XY = 22ceil(n/2) XlYl + 2ceil(n/2) * [(Xl + Xr)(Yl + Yr) - XlYl - XrYr] + XrYr
 The above algorithm is called Karatsuba algorithm and it can be used for any base.
+
+
