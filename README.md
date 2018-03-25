@@ -1,5 +1,5 @@
 # Karatsuba_32
-<h1><B>A 32 bit karatsuba multiplier.</B></h2>
+> A 32 bit karatsuba multiplier.
 The Karatsuba algorithm is a fast multiplication algorithm. It was discovered by Anatoly Karatsuba in 1960 and published in 1962. It reduces the multiplication of two n-digit numbers to at most <b> n^{1.585} </b>.
  
 It is therefore faster than the classical algorithm, which requires n^2 single-digit products. 
