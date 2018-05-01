@@ -1,0 +1,3 @@
+verilog isim_temp "karat.v"
+verilog isim_temp "tb_karat_16.v"
+verilog isim_temp "C:/Xilinx/14.3/ISE_DS/ISE//verilog/src/glbl.v"
