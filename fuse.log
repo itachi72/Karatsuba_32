@@ -1,0 +1,19 @@
+Running: E:\xilinx_setup\14.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/work/fpga/karatsuba_new/karat_isim_beh.exe -prj D:/work/fpga/karatsuba_new/karat_beh.prj work.karat work.glbl 
+ISim P.40xd (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/work/fpga/karatsuba_new/karat.v" into library work
+Analyzing Verilog file "E:/xilinx_setup/14.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 105316 KB
+Fuse CPU Usage: 405 ms
+Compiling module karat
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 2 Verilog Units
+Built simulation executable D:/work/fpga/karatsuba_new/karat_isim_beh.exe
+Fuse Memory Usage: 109908 KB
+Fuse CPU Usage: 467 ms
