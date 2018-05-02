@@ -1,0 +1,28 @@
+Command line:
+   tb_karat16_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54824
+
+Tue Apr 24 00:15:24 2018
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 353.214 Meg
+
+ Total Signals          : 24
+ Total Nets             : 253
+ Total Signal Drivers   : 20
+ Total Blocks           : 10
+ Total Primitive Blocks : 2
+ Total Processes        : 22
+ Total Traceable Variables  : 70
+ Total Scalar Nets and Variables : 773
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 353.214 Meg
+
+Tue Apr 24 00:15:51 2018
+

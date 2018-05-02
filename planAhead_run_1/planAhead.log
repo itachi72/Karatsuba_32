@@ -1,0 +1,155 @@
+#-----------------------------------------------------------
+# PlanAhead v14.3
+# Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+# Start of session at: Mon Apr 23 21:05:24 2018
+# Process ID: 5380
+# Log file: E:/Projects/exp_with_task_2/new/planAhead_run_1/planAhead.log
+# Journal file: E:/Projects/exp_with_task_2/new/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/Projects/exp_with_task_2/new/pa.fromNcd.tcl
+# create_project -name new -dir "E:/Projects/exp_with_task_2/new/planAhead_run_1" -part xc3s500efg320-4
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "E:/Projects/exp_with_task_2/new/karat_16.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {E:/Projects/exp_with_task_2/new} }
+# set_property target_constrs_file "karat_16.ucf" [current_fileset -constrset]
+Adding file 'E:/Projects/exp_with_task_2/new/karat_16.ucf' to fileset 'constrs_1'
+# add_files [list {karat_16.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-4
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design karat_16.ngc ...
+WARNING:NetListWriters:298 - No output is written to karat_16.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   Madd_karat8_1_karat5_1_mult3_3_mult3_Madd_cy<4 : 2> on block karat_16 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Madd_karat8_2_karat5_2_mult3_6_mult3_Madd_cy<4 : 2> on block karat_16 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_karat9_1_karat5_3_karat5_Madd_cy<5
+   : 3> on block karat_16 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_karat9_1_karat5_3_karat5_Madd_lut<7
+   : 2> on block karat_16 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_karat9_1_karat5_4_karat5_Madd_cy<5
+   : 3> on block karat_16 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Madd_karat9_1_karat5_5_mult3_9_mult3_Madd_cy<4 : 2> on block karat_16 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_old_add_cPd5_10_addsub0000_lut<2 :
+   0> on block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_old_add_cPd5_26_addsub0000_lut<2 :
+   0> on block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_old_add_cPd5_52_addsub0000_lut<2 :
+   0> on block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_shift_2_5_addsub0002_cy<3 : 1> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_shift_2_5_addsub0003_cy<3 : 1> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_shift_2_5_addsub0003_lut<3 : 0> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_temp9_2_addsub0000_lut<3 : 0> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_temp_2_addsub0000_lut<3 : 0> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_temp_2_addsub0002_lut<3 : 0> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus _old_temp_3_14<9 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus _old_temp_3_30<9 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus karat9_1_karat5_4_karat5<6 : 3> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_5_sub0000<7 : 0> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_5_sub0001<7 : 0> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_5_sub0004<7 : 0> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_sub0001<5 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_sub0003<5 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_sub0005<5 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_sub0007<5 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temp9_2_addsub0001<3 : 1> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temp_2_addsub0001<3 : 1> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temp_2_addsub0003<3 : 1> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temporary_1<7 : 0> on block karat_16 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temporary_3<17 : 0> on block karat_16 is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file karat_16.edif ...
+ngc2edif: Total memory usage is 70100 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/new.data/cache/karat_16_ngc_1f1b2798.edif]
+Finished Parsing EDIF File [./planAhead_run_1/new.data/cache/karat_16_ngc_1f1b2798.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'karat_16' is not ideal for floorplanning, since the cellview 'karat_16' defined in file 'karat_16.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [E:/Projects/exp_with_task_2/new/karat_16.ucf]
+Finished Parsing UCF File [E:/Projects/exp_with_task_2/new/karat_16.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: c6a4c6a4
+link_design: Time (s): elapsed = 00:00:28 . Memory (MB): peak = 418.258 ; gain = 63.301
+# read_xdl -file "E:/Projects/exp_with_task_2/new/karat_16.ncd"
+Release 14.3 - xdl P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.3\ISE_DS\ISE\.
+   "karat_16" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+Successfully converted design 'E:\Projects\exp_with_task_2\new\karat_16.ncd' to 'E:\Projects\exp_with_task_2\new\karat_16.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : E:/Projects/exp_with_task_2/new/karat_16.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : E:/Projects/exp_with_task_2/new/karat_16.ncd
+INFO: [Designutils 20-671] Placed 1509 instances
+read_xdl: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 426.332 ; gain = 8.074
+# if {[catch {read_twx -name results_1 -file "E:/Projects/exp_with_task_2/new/karat_16.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"E:/Projects/exp_with_task_2/new/karat_16.twx\": $eInfo"
+# }
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Mon Apr 23 21:37:23 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,19 +1,19 @@
-Running: E:\xilinx_setup\14.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/work/fpga/karatsuba_new/karat_isim_beh.exe -prj D:/work/fpga/karatsuba_new/karat_beh.prj work.karat work.glbl 
-ISim P.40xd (signature 0x8ef4fb42)
-Number of CPUs detected in this system: 2
-Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Running: C:\Xilinx\14.3\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/Projects/exp_with_task_2/new/tb_karat16_isim_beh.exe -prj E:/Projects/exp_with_task_2/new/tb_karat16_beh.prj work.tb_karat16 work.glbl 
+ISim P.40xd (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/work/fpga/karatsuba_new/karat.v" into library work
-Analyzing Verilog file "E:/xilinx_setup/14.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Analyzing Verilog file "E:/Projects/exp_with_task_2/new/new.v" into library work
+Analyzing Verilog file "E:/Projects/exp_with_task_2/new/tb_karat16.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 105316 KB
-Fuse CPU Usage: 405 ms
-Compiling module karat
+Compiling module karat_16
+Compiling module tb_karat16
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 2 Verilog Units
-Built simulation executable D:/work/fpga/karatsuba_new/karat_isim_beh.exe
-Fuse Memory Usage: 109908 KB
-Fuse CPU Usage: 467 ms
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\tb_karat16_isim_beh.exe.sim\libPortability.dll".
+Compiled 3 Verilog Units
+Built simulation executable E:/Projects/exp_with_task_2/new/tb_karat16_isim_beh.exe
+Fuse Memory Usage: 26500 KB
+Fuse CPU Usage: 390 ms

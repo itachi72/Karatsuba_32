@@ -1,0 +1,163 @@
+Release 14.3 par P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ABC::  Mon Apr 23 21:04:21 2018
+
+par -w -intstyle ise -ol high -t 1 karat_16_map.ncd karat_16.ncd karat_16.pcf 
+
+
+Constraints file: karat_16.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.3\ISE_DS\ISE\.
+   "karat_16" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2012-10-12".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          64 out of 232    27%
+
+   Number of External Input IOBs                 32
+
+      Number of External Input IBUFs             32
+
+   Number of External Output IOBs                32
+
+      Number of External Output IOBs             32
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of Slices                        400 out of 4656    8%
+      Number of SLICEMs                      0 out of 2328    0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 3 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:1a39d) REAL time: 5 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:1a39d) REAL time: 5 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:1a39d) REAL time: 5 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+....
+Phase 4.2  Initial Clock and IO Placement (Checksum:1a39d) REAL time: 5 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:1a39d) REAL time: 5 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:1a39d) REAL time: 5 secs 
+
+Phase 7.3  Local Placement Optimization
+....
+Phase 7.3  Local Placement Optimization (Checksum:4fa2e635) REAL time: 6 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:4fa2e635) REAL time: 6 secs 
+
+Phase 9.8  Global Placement
+........................................
+......
+Phase 9.8  Global Placement (Checksum:3004392c) REAL time: 6 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:3004392c) REAL time: 6 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:3068e63f) REAL time: 6 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:3068e63f) REAL time: 6 secs 
+
+Total REAL time to Placer completion: 6 secs 
+Total CPU  time to Placer completion: 1 secs 
+Writing design to file karat_16.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 2639 unrouted;      REAL time: 9 secs 
+
+Phase  2  : 2601 unrouted;      REAL time: 9 secs 
+
+Phase  3  : 626 unrouted;      REAL time: 9 secs 
+
+Phase  4  : 626 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+
+Updating file: karat_16.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Total REAL time to Router completion: 10 secs 
+Total CPU time to Router completion: 5 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 10 secs 
+Total CPU time to PAR completion: 5 secs 
+
+Peak Memory Usage:  269 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file karat_16.ncd
+
+
+
+PAR done!

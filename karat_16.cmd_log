@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "E:/Projects/exp_with_task_2/new/karat_16.xst" -ofn "E:/Projects/exp_with_task_2/new/karat_16.syr" 
+xst -intstyle ise -ifn "E:/Projects/exp_with_task_2/new/karat_16.xst" -ofn "E:/Projects/exp_with_task_2/new/karat_16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 karat_16.ngc karat_16.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o karat_16_map.ncd karat_16.ngd karat_16.pcf 
+par -w -intstyle ise -ol high -t 1 karat_16_map.ncd karat_16.ncd karat_16.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml karat_16.twx karat_16.ncd -o karat_16.twr karat_16.pcf 
+xst -intstyle ise -ifn "E:/Projects/exp_with_task_2/new/karat_16.xst" -ofn "E:/Projects/exp_with_task_2/new/karat_16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 karat_16.ngc karat_16.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o karat_16_map.ncd karat_16.ngd karat_16.pcf 
+par -w -intstyle ise -ol high -t 1 karat_16_map.ncd karat_16.ncd karat_16.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml karat_16.twx karat_16.ncd -o karat_16.twr karat_16.pcf 
+bitgen -intstyle ise -f karat_16.ut karat_16.ncd 

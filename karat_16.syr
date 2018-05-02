@@ -1,0 +1,569 @@
+Release 14.3 - xst P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.56 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.56 secs
+ 
+--> Reading design: karat_16.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "karat_16.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "karat_16"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : karat_16
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "new.v" in library work
+Module <karat_16> compiled
+No errors in compilation
+Analysis of file <"karat_16.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <karat_16> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <karat_16>.
+	Calling function <karat8>.
+	Calling function <karat4>.
+	Calling function <mult2>.
+	Calling function <mult2>.
+	Calling function <mult3>.
+	Calling function <karat4>.
+	Calling function <mult2>.
+	Calling function <mult2>.
+	Calling function <mult3>.
+	Calling function <karat5>.
+	Calling function <mult3>.
+	Calling function <mult2>.
+	Calling function <mult4_5>.
+	Calling function <karat8>.
+	Calling function <karat4>.
+	Calling function <mult2>.
+	Calling function <mult2>.
+	Calling function <mult3>.
+	Calling function <karat4>.
+	Calling function <mult2>.
+	Calling function <mult2>.
+	Calling function <mult3>.
+	Calling function <karat5>.
+	Calling function <mult3>.
+	Calling function <mult2>.
+	Calling function <mult4_5>.
+	Calling function <karat9>.
+	Calling function <karat5>.
+	Calling function <mult3>.
+	Calling function <mult2>.
+	Calling function <mult4_5>.
+	Calling function <karat5>.
+	Calling function <mult3>.
+	Calling function <mult2>.
+	Calling function <mult4_5>.
+	Calling function <karat5>.
+	Calling function <mult3>.
+	Calling function <mult2>.
+	Calling function <mult4_5>.
+Module <karat_16> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <karat_16>.
+    Related source file is "new.v".
+WARNING:Xst:646 - Signal <temp_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp9_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp9_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp9_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_4_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_2_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift9_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift9_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift8_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <shift8_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mul_p5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mul_p> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l9_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <l9_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <karat9/1/karat5/4/karat5<9:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <karat9/1/karat5/3/karat5<9:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bd5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <add_cPd5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <add_cPd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <add_ac_bd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <add_aPb5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <add_aPb> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ac5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ac> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <F>.
+    Found 3-bit adder for signal <add_aPb5$add0000> created at line 150.
+    Found 3-bit adder for signal <add_aPb5$add0001> created at line 150.
+    Found 3-bit adder for signal <add_cPd5$add0000> created at line 151.
+    Found 3-bit adder for signal <add_cPd5$add0001> created at line 151.
+    Found 32-bit adder for signal <F$addsub0000> created at line 88.
+    Found 8-bit adder for signal <karat4$addsub0000> created at line 140.
+    Found 8-bit adder for signal <karat4$addsub0001> created at line 140.
+    Found 8-bit adder for signal <karat4$addsub0002> created at line 140.
+    Found 8-bit adder for signal <karat4$addsub0003> created at line 140.
+    Found 10-bit adder for signal <karat5$addsub0000> created at line 155.
+    Found 10-bit adder for signal <karat5$addsub0001> created at line 155.
+    Found 10-bit adder for signal <karat5$addsub0002> created at line 155.
+    Found 10-bit adder for signal <karat5$addsub0003> created at line 155.
+    Found 10-bit adder for signal <karat5$addsub0004> created at line 155.
+    Found 16-bit adder for signal <karat8$addsub0000> created at line 106.
+    Found 16-bit adder for signal <karat8$addsub0001> created at line 106.
+    Found 8-bit adder for signal <karat8/1/karat4/1/karat4>.
+    Found 4-bit adder for signal <karat8/1/karat4/1/mult2/1/mult2>.
+    Found 4-bit adder for signal <karat8/1/karat4/1/mult2/2/mult2>.
+    Found 6-bit adder for signal <karat8/1/karat4/1/mult3/1/mult3>.
+    Found 8-bit adder for signal <karat8/1/karat4/2/karat4>.
+    Found 4-bit adder for signal <karat8/1/karat4/2/mult2/3/mult2>.
+    Found 4-bit adder for signal <karat8/1/karat4/2/mult2/4/mult2>.
+    Found 6-bit adder for signal <karat8/1/karat4/2/mult3/2/mult3>.
+    Found 10-bit adder for signal <karat8/1/karat5/1/karat5>.
+    Found 4-bit adder for signal <karat8/1/karat5/1/mult2/5/mult2>.
+    Found 6-bit adder for signal <karat8/1/karat5/1/mult3/3/mult3>.
+    Found 6-bit adder for signal <karat8/1/karat5/1/mult4_5/1/mult4_5>.
+    Found 16-bit adder for signal <karat8/1/karat8>.
+    Found 8-bit adder for signal <karat8/2/karat4/3/karat4>.
+    Found 4-bit adder for signal <karat8/2/karat4/3/mult2/6/mult2>.
+    Found 4-bit adder for signal <karat8/2/karat4/3/mult2/7/mult2>.
+    Found 6-bit adder for signal <karat8/2/karat4/3/mult3/4/mult3>.
+    Found 8-bit adder for signal <karat8/2/karat4/4/karat4>.
+    Found 4-bit adder for signal <karat8/2/karat4/4/mult2/8/mult2>.
+    Found 4-bit adder for signal <karat8/2/karat4/4/mult2/9/mult2>.
+    Found 6-bit adder for signal <karat8/2/karat4/4/mult3/5/mult3>.
+    Found 10-bit adder for signal <karat8/2/karat5/2/karat5>.
+    Found 4-bit adder for signal <karat8/2/karat5/2/mult2/10/mult2>.
+    Found 6-bit adder for signal <karat8/2/karat5/2/mult3/6/mult3>.
+    Found 6-bit adder for signal <karat8/2/karat5/2/mult4_5/2/mult4_5>.
+    Found 16-bit adder for signal <karat8/2/karat8>.
+    Found 10-bit adder for signal <karat9/1/karat5/3/karat5>.
+    Found 4-bit adder for signal <karat9/1/karat5/3/mult2/11/mult2>.
+    Found 6-bit adder for signal <karat9/1/karat5/3/mult3/7/mult3>.
+    Found 6-bit adder for signal <karat9/1/karat5/3/mult4_5/3/mult4_5>.
+    Found 10-bit adder for signal <karat9/1/karat5/4/karat5>.
+    Found 4-bit adder for signal <karat9/1/karat5/4/mult2/12/mult2>.
+    Found 6-bit adder for signal <karat9/1/karat5/4/mult3/8/mult3>.
+    Found 6-bit adder for signal <karat9/1/karat5/4/mult4_5/4/mult4_5>.
+    Found 10-bit adder for signal <karat9/1/karat5/5/karat5>.
+    Found 4-bit adder for signal <karat9/1/karat5/5/mult2/13/mult2>.
+    Found 6-bit adder for signal <karat9/1/karat5/5/mult3/9/mult3>.
+    Found 6-bit adder for signal <karat9/1/karat5/5/mult4_5/5/mult4_5>.
+    Found 6-bit adder for signal <mult3$addsub0000> created at line 164.
+    Found 6-bit adder for signal <mult3$addsub0001> created at line 164.
+    Found 6-bit adder for signal <mult3$addsub0002> created at line 164.
+    Found 6-bit adder for signal <mult3$addsub0003> created at line 164.
+    Found 6-bit adder for signal <mult3$addsub0004> created at line 164.
+    Found 6-bit adder for signal <mult3$addsub0005> created at line 164.
+    Found 6-bit adder for signal <mult3$addsub0006> created at line 164.
+    Found 6-bit adder for signal <mult3$addsub0007> created at line 164.
+    Found 6-bit adder for signal <mult3$addsub0008> created at line 164.
+    Found 6-bit adder for signal <mult4_5$addsub0000> created at line 168.
+    Found 6-bit adder for signal <mult4_5$addsub0001> created at line 168.
+    Found 6-bit adder for signal <mult4_5$addsub0002> created at line 168.
+    Found 6-bit adder for signal <mult4_5$addsub0003> created at line 168.
+    Found 6-bit adder for signal <mult4_5$addsub0004> created at line 168.
+    Found 6-bit adder for signal <mult4_5$addsub0005> created at line 168.
+    Found 6-bit adder for signal <mult4_5$addsub0006> created at line 168.
+    Found 6-bit adder for signal <mult4_5$addsub0007> created at line 168.
+    Found 6-bit adder for signal <mult4_5$addsub0008> created at line 168.
+    Found 6-bit adder for signal <mult4_5$addsub0009> created at line 168.
+    Found 3-bit adder carry out for signal <old_add_aPb5_25$addsub0000>.
+    Found 3-bit adder carry out for signal <old_add_aPb5_51$addsub0000>.
+    Found 3-bit adder carry out for signal <old_add_aPb5_9$addsub0000>.
+    Found 2-bit adder carry out for signal <old_add_aPb_1$addsub0000>.
+    Found 2-bit adder carry out for signal <old_add_aPb_17$addsub0000>.
+    Found 2-bit adder carry out for signal <old_add_aPb_21$addsub0000>.
+    Found 2-bit adder carry out for signal <old_add_aPb_5$addsub0000>.
+    Found 3-bit adder carry out for signal <old_add_cPd5_10$addsub0000>.
+    Found 3-bit adder carry out for signal <old_add_cPd5_26$addsub0000>.
+    Found 3-bit adder carry out for signal <old_add_cPd5_52$addsub0000>.
+    Found 2-bit adder carry out for signal <old_add_cPd_18$addsub0000>.
+    Found 2-bit adder carry out for signal <old_add_cPd_2$addsub0000>.
+    Found 2-bit adder carry out for signal <old_add_cPd_22$addsub0000>.
+    Found 2-bit adder carry out for signal <old_add_cPd_6$addsub0000>.
+    Found 8-bit subtractor for signal <shift_2$sub0000> created at line 139.
+    Found 8-bit subtractor for signal <shift_2$sub0001> created at line 139.
+    Found 8-bit subtractor for signal <shift_2$sub0002> created at line 139.
+    Found 8-bit subtractor for signal <shift_2$sub0003> created at line 139.
+    Found 8-bit subtractor for signal <shift_2$sub0004> created at line 139.
+    Found 8-bit subtractor for signal <shift_2$sub0005> created at line 139.
+    Found 8-bit subtractor for signal <shift_2$sub0006> created at line 139.
+    Found 8-bit subtractor for signal <shift_2$sub0007> created at line 139.
+    Found 6-bit adder carry out for signal <shift_2_5$addsub0000> created at line 154.
+    Found 6-bit adder carry out for signal <shift_2_5$addsub0001> created at line 154.
+    Found 6-bit adder carry out for signal <shift_2_5$addsub0002> created at line 154.
+    Found 6-bit adder carry out for signal <shift_2_5$addsub0003> created at line 154.
+    Found 6-bit adder carry out for signal <shift_2_5$addsub0004> created at line 154.
+    Found 10-bit subtractor for signal <shift_2_5$sub0000> created at line 154.
+    Found 10-bit subtractor for signal <shift_2_5$sub0001> created at line 154.
+    Found 10-bit subtractor for signal <shift_2_5$sub0002> created at line 154.
+    Found 10-bit subtractor for signal <shift_2_5$sub0003> created at line 154.
+    Found 10-bit subtractor for signal <shift_2_5$sub0004> created at line 154.
+    Found 4-bit adder carry out for signal <temp9_2$addsub0000> created at line 119.
+    Found 4-bit adder carry out for signal <temp9_2$addsub0001> created at line 120.
+    Found 8-bit adder carry out for signal <temp9_3$addsub0000> created at line 122.
+    Found 4-bit adder carry out for signal <temp_2$addsub0000> created at line 100.
+    Found 4-bit adder carry out for signal <temp_2$addsub0001> created at line 101.
+    Found 4-bit adder carry out for signal <temp_2$addsub0002> created at line 100.
+    Found 4-bit adder carry out for signal <temp_2$addsub0003> created at line 101.
+    Found 8-bit adder carry out for signal <temp_3$addsub0000> created at line 103.
+    Found 8-bit adder carry out for signal <temp_3$addsub0001> created at line 103.
+    Found 8-bit adder carry out for signal <temporary_1_0$addsub0000>.
+    Found 8-bit adder carry out for signal <temporary_1_1$addsub0000>.
+    Found 17-bit adder for signal <temporary_2$add0000> created at line 125.
+    Found 16-bit adder carry out for signal <temporary_2$addsub0001> created at line 125.
+    Found 18-bit subtractor for signal <temporary_3>.
+    Found 16-bit adder carry out for signal <temporary_3$addsub0000> created at line 85.
+    Summary:
+	inferred 124 Adder/Subtractor(s).
+Unit <karat_16> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 124
+ 10-bit adder                                          : 10
+ 10-bit subtractor                                     : 8
+ 16-bit adder                                          : 4
+ 16-bit adder carry out                                : 2
+ 17-bit adder                                          : 1
+ 18-bit subtractor                                     : 1
+ 2-bit adder carry out                                 : 8
+ 3-bit adder                                           : 4
+ 3-bit adder carry out                                 : 6
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 13
+ 4-bit adder carry out                                 : 6
+ 6-bit adder                                           : 33
+ 6-bit adder carry out                                 : 5
+ 8-bit adder                                           : 8
+ 8-bit adder carry out                                 : 5
+ 8-bit subtractor                                      : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 120
+ 10-bit adder                                          : 6
+ 10-bit subtractor                                     : 3
+ 16-bit adder                                          : 4
+ 16-bit adder carry out                                : 2
+ 17-bit adder                                          : 1
+ 18-bit subtractor                                     : 1
+ 2-bit adder carry out                                 : 8
+ 3-bit adder                                           : 4
+ 3-bit adder carry out                                 : 6
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 13
+ 4-bit adder carry out                                 : 6
+ 6-bit adder                                           : 25
+ 6-bit adder carry in                                  : 4
+ 6-bit adder carry out                                 : 5
+ 6-bit subtractor                                      : 10
+ 8-bit adder                                           : 12
+ 8-bit adder carry out                                 : 5
+ 8-bit subtractor                                      : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <karat_16> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block karat_16, actual ratio is 9.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : karat_16.ngr
+Top Level Output File Name         : karat_16
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 64
+
+Cell Usage :
+# BELS                             : 1466
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 15
+#      LUT2                        : 214
+#      LUT3                        : 83
+#      LUT4                        : 423
+#      MULT_AND                    : 89
+#      MUXCY                       : 283
+#      MUXF5                       : 26
+#      VCC                         : 1
+#      XORCY                       : 313
+# IO Buffers                       : 64
+#      IBUF                        : 32
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      413  out of   4656     8%  
+ Number of 4 input LUTs:                753  out of   9312     8%  
+ Number of IOs:                          64
+ Number of bonded IOBs:                  64  out of    232    27%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 40.816ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 25118646404 / 32
+-------------------------------------------------------------------------
+Delay:               40.816ns (Levels of Logic = 46)
+  Source:            E<8> (PAD)
+  Destination:       F<31> (PAD)
+
+  Data Path: E<8> to F<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.218   1.192  E_8_IBUF (E_8_IBUF)
+     LUT2:I0->O            1   0.704   0.000  Madd_temporary_1_1_addsub0000_lut<0> (Madd_temporary_1_1_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Madd_temporary_1_1_addsub0000_cy<0> (Madd_temporary_1_1_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_temporary_1_1_addsub0000_cy<1> (Madd_temporary_1_1_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_temporary_1_1_addsub0000_cy<2> (Madd_temporary_1_1_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_temporary_1_1_addsub0000_cy<3> (Madd_temporary_1_1_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_temporary_1_1_addsub0000_cy<4> (Madd_temporary_1_1_addsub0000_cy<4>)
+     XORCY:CI->O          10   0.804   1.057  Madd_temporary_1_1_addsub0000_xor<5> (temporary_1<1><5>)
+     LUT4:I0->O            8   0.704   0.761  Madd_temp9_2_addsub0001_cy<1>11 (Madd_temp9_2_addsub0001_cy<1>)
+     LUT4:I3->O            1   0.704   0.000  Madd_temp9_2_addsub0001_xor<3>111 (Madd_temp9_2_addsub0001_xor<3>11)
+     MUXF5:I1->O          10   0.321   0.886  Madd_temp9_2_addsub0001_xor<3>11_f5 (temp9_2_addsub0001<3>)
+     LUT4:I3->O            5   0.704   0.808  Madd_old_add_cPd5_52_addsub0000_cy<1>11 (Madd_old_add_cPd5_52_addsub0000_cy<1>)
+     LUT4:I0->O            2   0.704   0.622  Madd_old_add_cPd5_52_addsub0000_xor<2>11 (old_add_cPd5_52_addsub0000<2>)
+     LUT4:I0->O            4   0.704   0.762  mult4_5_and00831 (mult4_5_and0083)
+     LUT2:I0->O            1   0.704   0.000  Madd_mult4_5_addsub0009_Madd_lut<4>_SW12 (Madd_mult4_5_addsub0009_Madd_lut<4>_SW11)
+     MUXF5:I0->O           1   0.321   0.499  Madd_mult4_5_addsub0009_Madd_lut<4>_SW1_f5 (N202)
+     LUT4:I1->O            2   0.704   0.622  Madd_mult4_5_addsub0009_Madd_lut<4> (Madd_mult4_5_addsub0009_Madd_lut<4>)
+     LUT4:I0->O            2   0.704   0.526  Madd_mult4_5_addsub0009_Madd_xor<4>11 (mult4_5_addsub0009<4>)
+     LUT4:I1->O            3   0.704   0.610  Madd_karat9_1_karat5_5_mult4_5_5_mult4_5_lut<4>1 (Madd_karat9_1_karat5_5_mult4_5_5_mult4_5_lut<4>)
+     LUT4:I1->O            1   0.704   0.595  Madd_karat9_1_karat5_5_mult4_5_5_mult4_5_xor<5>11 (karat9_1_karat5_5_mult4_5_5_mult4_5<5>)
+     LUT2:I0->O            1   0.704   0.000  Msub_shift_2_5_sub0004_Madd_lut<5> (Msub_shift_2_5_sub0004_Madd_lut<5>)
+     MUXCY:S->O            1   0.464   0.000  Msub_shift_2_5_sub0004_Madd_cy<5> (Msub_shift_2_5_sub0004_Madd_cy<5>)
+     XORCY:CI->O           2   0.804   0.526  Msub_shift_2_5_sub0004_Madd_xor<6> (shift_2_5_sub0004<6>)
+     LUT4:I1->O            1   0.704   0.000  Madd_karat9_1_karat5_5_karat5_Madd_lut<8> (Madd_karat9_1_karat5_5_karat5_Madd_lut<8>)
+     XORCY:LI->O           1   0.527   0.595  Madd_karat9_1_karat5_5_karat5_Madd_xor<8> (karat9_1_karat5_5_karat5<8>)
+     LUT2:I0->O            1   0.704   0.000  Msub__old_temp9_3_56_lut<8> (Msub__old_temp9_3_56_lut<8>)
+     MUXCY:S->O            0   0.464   0.000  Msub__old_temp9_3_56_cy<8> (Msub__old_temp9_3_56_cy<8>)
+     XORCY:CI->O           1   0.804   0.499  Msub__old_temp9_3_56_xor<9> (_old_temp9_3_56<9>)
+     LUT2:I1->O            1   0.704   0.000  Madd_temporary_2_addsub0001_lut<11> (Madd_temporary_2_addsub0001_lut<11>)
+     MUXCY:S->O            1   0.464   0.000  Madd_temporary_2_addsub0001_cy<11> (Madd_temporary_2_addsub0001_cy<11>)
+     XORCY:CI->O           1   0.804   0.595  Madd_temporary_2_addsub0001_xor<12> (temporary_2_addsub0001<14>)
+     LUT1:I0->O            1   0.704   0.000  Madd_temporary_2_add0000_cy<14>_rt (Madd_temporary_2_add0000_cy<14>_rt)
+     MUXCY:S->O            1   0.464   0.000  Madd_temporary_2_add0000_cy<14> (Madd_temporary_2_add0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.595  Madd_temporary_2_add0000_xor<15> (karat9_1_karat9<15>)
+     LUT2:I0->O            1   0.704   0.000  Msub_temporary_3_lut<15> (Msub_temporary_3_lut<15>)
+     MUXCY:S->O            1   0.464   0.000  Msub_temporary_3_cy<15> (Msub_temporary_3_cy<15>)
+     XORCY:CI->O           2   0.804   0.447  Msub_temporary_3_xor<16> (Madd_FC16_mand)
+     MULT_AND:I1->LO       0   0.741   0.000  Madd_FC16_mand (Madd_FC16_mand1)
+     MUXCY:DI->O           1   0.888   0.000  Madd_F_Madd_cy<25> (Madd_F_Madd_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_F_Madd_cy<26> (Madd_F_Madd_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_F_Madd_cy<27> (Madd_F_Madd_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_F_Madd_cy<28> (Madd_F_Madd_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_F_Madd_cy<29> (Madd_F_Madd_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Madd_F_Madd_cy<30> (Madd_F_Madd_cy<30>)
+     XORCY:CI->O           1   0.804   0.420  Madd_F_Madd_xor<31> (F_31_OBUF)
+     OBUF:I->O                 3.272          F_31_OBUF (F<31>)
+    ----------------------------------------
+    Total                     40.816ns (28.199ns logic, 12.617ns route)
+                                       (69.1% logic, 30.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.17 secs
+ 
+--> 
+
+Total memory usage is 259668 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

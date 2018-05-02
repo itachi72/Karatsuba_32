@@ -1,0 +1,86 @@
+Release 14.3 - ngc2edif P.40xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design karat_16.ngc ...
+WARNING:NetListWriters:298 - No output is written to karat_16.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   Madd_karat8_1_karat5_1_mult3_3_mult3_Madd_cy<4 : 2> on block karat_16 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Madd_karat8_2_karat5_2_mult3_6_mult3_Madd_cy<4 : 2> on block karat_16 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_karat9_1_karat5_3_karat5_Madd_cy<5
+   : 3> on block karat_16 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_karat9_1_karat5_3_karat5_Madd_lut<7
+   : 2> on block karat_16 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_karat9_1_karat5_4_karat5_Madd_cy<5
+   : 3> on block karat_16 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Madd_karat9_1_karat5_5_mult3_9_mult3_Madd_cy<4 : 2> on block karat_16 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_old_add_cPd5_10_addsub0000_lut<2 :
+   0> on block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_old_add_cPd5_26_addsub0000_lut<2 :
+   0> on block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_old_add_cPd5_52_addsub0000_lut<2 :
+   0> on block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_shift_2_5_addsub0002_cy<3 : 1> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_shift_2_5_addsub0003_cy<3 : 1> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_shift_2_5_addsub0003_lut<3 : 0> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_temp9_2_addsub0000_lut<3 : 0> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_temp_2_addsub0000_lut<3 : 0> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_temp_2_addsub0002_lut<3 : 0> on
+   block karat_16 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus _old_temp_3_14<9 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus _old_temp_3_30<9 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus karat9_1_karat5_4_karat5<6 : 3> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_5_sub0000<7 : 0> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_5_sub0001<7 : 0> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_5_sub0004<7 : 0> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_sub0001<5 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_sub0003<5 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_sub0005<5 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus shift_2_sub0007<5 : 0> on block karat_16
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temp9_2_addsub0001<3 : 1> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temp_2_addsub0001<3 : 1> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temp_2_addsub0003<3 : 1> on block
+   karat_16 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temporary_1<7 : 0> on block karat_16 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus temporary_3<17 : 0> on block karat_16 is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file karat_16.edif ...
+ngc2edif: Total memory usage is 70100 kilobytes
+

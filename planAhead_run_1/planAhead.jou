@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.3
+# Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+# Start of session at: Mon Apr 23 21:05:24 2018
+# Process ID: 5380
+# Log file: E:/Projects/exp_with_task_2/new/planAhead_run_1/planAhead.log
+# Journal file: E:/Projects/exp_with_task_2/new/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/Projects/exp_with_task_2/new/pa.fromNcd.tcl

@@ -1,0 +1,28 @@
+Command line:
+   karat_16_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54762
+
+Tue Apr 24 00:14:09 2018
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 353.19 Meg
+
+ Total Signals          : 23
+ Total Nets             : 253
+ Total Signal Drivers   : 18
+ Total Blocks           : 9
+ Total Primitive Blocks : 2
+ Total Processes        : 19
+ Total Traceable Variables  : 68
+ Total Scalar Nets and Variables : 741
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 667.779 Meg
+
+Tue Apr 24 00:15:10 2018
+
